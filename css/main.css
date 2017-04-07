@@ -1,7 +1,8 @@
 /* Your code goes here */
 .container {
     display: flex;
-    flex-direction: column-reverse;  /*row, row-reverse, column, column-reverse*/
+    flex-direction: row-reverse;  /*row, row-reverse, column, column-reverse*/
+    justify-content: space-between; /*flex-start, flex-end, center, space-around, space-between*/
 }
 
 .container div {
