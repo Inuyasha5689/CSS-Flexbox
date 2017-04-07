@@ -1,17 +1,16 @@
 /* Your code goes here */
 .container {
     display: flex;
-    flex-direction: row-reverse;  /*row, row-reverse, column, column-reverse*/
-    justify-content: space-between; /*flex-start, flex-end, center, space-around, space-between*/
+    flex-flow: row-reverse wrap-reverse;  /* Combination of flex-direction and flex-wrap*/
+    /*flex-direction: row;  row, row-reverse, column, column-reverse
+    flex-wrap: wrap; default: nowrap, wrap, wrap-reverse*/
+    justify-content: flex-start; /*flex-start, flex-end, center, space-around, space-between*/
     align-items: flex-start; /*stretch, flex-start, flex-end, center, baseline*/
     border: 1px solid #fff;
     height: 200px;
+    width: 500px;
 }
 
 .container div {
     float: right;
-}
-
-.container div:nth-child(2) {
-    font-size: 40px;
 }
