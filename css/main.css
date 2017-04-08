@@ -10,11 +10,21 @@
     width: 800px;
 }
 
+/*
+    flex-basis
+    container has a) space left or b) is overfull
+    look at a) flew-grow and b) flex-shrink
+    calculate portions each items will grow / shrink
+    add that to the base size
+*/
+
 .container div {
     float: right;
-    width: 200px;
     margin: 0;
+    flex-basis: 200px;  /*takes precedent over width*/
+    flex-grow: 1;
     flex-shrink: 1;
+    flex: 1 1 20%; /*grow, shrink, basis*/
 }
 
 .container div:nth-child(2) {
