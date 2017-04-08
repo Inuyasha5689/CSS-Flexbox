@@ -4,27 +4,24 @@
     flex-flow: row wrap;  /* Combination of flex-direction and flex-wrap*/
     /*flex-direction: row;  row, row-reverse, column, column-reverse
     flex-wrap: wrap; default: nowrap, wrap, wrap-reverse*/
-    justify-content: flex-start; /*flex-start, flex-end, center, space-around, space-between*/
-    align-items: flex-start; /*stretch, flex-start, flex-end, center, baseline*/
+    /*justify-content: flex-start; flex-start, flex-end, center, space-around, space-between*/
+    /* align-items: flex-start; stretch, flex-start, flex-end, center, baseline*/
     border: 1px solid #fff;
-    height: 300px;
-    width: 500px;
+    width: 800px;
 }
 
 .container div {
     float: right;
+    width: 100px;
+    margin: 0;
+    flex-grow: 1;
 }
 
 .container div:nth-child(2) {
-    order: -1;  /*is 0 by default always*/
-    align-self: stretch;
-}
-
-.container div:nth-child(5) {
-    order: 1;  /*is 0 by default always*/
-    align-self: flex-end;
+    order: 0;  /*is 0 by default always*/
+    flex-grow: 3;
 }
 
 .container div:nth-child(3) {
-    order: 5;  /*is 0 by default always*/
+    flex-grow: 3;
 }
