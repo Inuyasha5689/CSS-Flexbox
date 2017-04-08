@@ -12,16 +12,15 @@
 
 .container div {
     float: right;
-    width: 100px;
+    width: 200px;
     margin: 0;
-    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .container div:nth-child(2) {
-    order: 0;  /*is 0 by default always*/
-    flex-grow: 3;
+    flex-shrink: 2; /*set to 1 by default*/
 }
 
 .container div:nth-child(3) {
-    flex-grow: 3;
+    
 }
